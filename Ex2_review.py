@@ -27,7 +27,11 @@ print("-------------------------------------------\n"
 #
 # Write your code below:
 
-
+number = int(input("Enter a number: "))
+if number % 2 == 0:
+    print(f"{number} is even.")
+else:
+    print(f"{number} is odd.")
 # -------------------------------------------
 # Submitting Your Work
 # -------------------------------------------
@@ -59,7 +63,13 @@ print("-------------------------------------------\n"
 #
 # Write your code below:
 
-
+score = int(input("Enter your score (0-100): "))
+if score >= 70:
+    print("Excellent!")
+elif score >= 50:
+    print("Good effort!")
+else:
+    print("Needs improvement.")    
 # -------------------------------------------
 # Submitting Your Work
 # -------------------------------------------
@@ -96,7 +106,11 @@ print("-------------------------------------------\n"
 #
 # Write your code below:
 
-
+number1 = int(input("Enter a starting number: ")) 
+while number1 >= 1:
+    print(number1)
+    number1 -= 1
+print("Blast off!")
 # -------------------------------------------
 # Submitting Your Work
 # -------------------------------------------
@@ -130,7 +144,9 @@ print("-------------------------------------------\n"
 #
 # Write your code below:
 
-
+number2 = int(input("Enter a number: "))
+for i in range(1,11):
+    print(f"{number2} x {i} = {number2 * i}") 
 # -------------------------------------------
 # Submitting Your Work
 # -------------------------------------------
@@ -166,7 +182,15 @@ print("-------------------------------------------\n"
 #
 # Write your code below:
 
-
+secret_number = 6
+guess = int(input("Enter your guess (1-10): "))
+while guess != secret_number:
+    if guess < secret_number:
+       print("Too low!")
+    else:
+       print("Too high!")    
+    guess = int(input("Enter your guess again (1-10): "))
+print("Correct! Well done.")
 # -------------------------------------------
 # Submitting Your Work
 # -------------------------------------------
